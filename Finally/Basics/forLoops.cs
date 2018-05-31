@@ -23,7 +23,7 @@ namespace Finally.Basics
             }
            /* for(int i = 0; i < klasseArray.Length; i++)
             {
-                Person p = new Person($"Ali El Hatri{i}", "Jens Bjelkes Gate 77", 25);
+                Person p = new Person($"Solid Snake{i}", "Shadow Moses Island", 25);
                 klasseArray[i] = p;
             }*/
         }
