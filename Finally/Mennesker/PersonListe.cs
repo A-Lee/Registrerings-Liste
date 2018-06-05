@@ -12,6 +12,22 @@ namespace Finally.Mennesker
         {
             personListe = new List<Person>();
         }
+        public void leggTilFlere(params Person[] personer)
+        {
+            foreach(var person in personer)
+            {
+                if(finnes(person))
+                {
+                    Console.WriteLine($"{person.getFornavn()} finnes allerede i listen");
+                    continue;
+                }
+                else
+                {
+                    personListe.Add(person);
+                    Console.WriteLine($"{person.getFornavn()} {person.getEtternavn()} er lagt til i listen");
+                }
+            }
+        }
         public void leggTil(Person p)
         {
             if(finnes(p))

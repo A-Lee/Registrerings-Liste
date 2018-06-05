@@ -1,5 +1,6 @@
 ﻿using System;
 using Finally.Mennesker;
+using Finally.Basics;
 
 
 namespace Finally
@@ -39,6 +40,43 @@ namespace Finally
             Console.WriteLine("\n\n");
             Console.WriteLine(personListe.printListe());
             Console.ReadKey();
+
+            FilProgrammering fp = new FilProgrammering();
+            fp.lagFilOgMappe();
+            fp.sjekkBilderMappe();
+
+            Console.ReadKey();
+
+            Person pf1 = new Person("Nathan2", "Drake3", "Pirat`s Cove", 30, 1337);
+            Person pf2 = new Person("Nathan3", "Drake3", "Pirat`s Cove", 30, 1337);
+            Person pf3 = new Person("Nathan3", "Drake3", "Pirat`s Cove", 30, 1337);
+            Person pf4 = new Person("Nathan4", "Drake4", "Pirat`s Cove", 30, 1337);
+
+            personListe.leggTilFlere(pf1,pf2,pf3,pf4);
+
+            Console.WriteLine($"Antall i listen: {personListe.antall()}");
+            Console.WriteLine("\n\n");
+            Console.WriteLine(personListe.printListe());
+            Console.ReadKey();
+
+            Calculator test = new Calculator();
+            Console.WriteLine(test.add(4,5,6,7,32,6,7));
+            Console.WriteLine(test.multiply(5,3,5));
+
+            Console.ReadKey();
+
+            Kunde kunde = new Kunde(pf1, 1, KundeType.Standard);
+            Ordre ordre1 = new Ordre(120, 4,"Stol");
+            Ordre ordre2 = new Ordre(300, 1, "Bord");
+            Ordre ordre3 = new Ordre(100, 2, "Lampe");
+
+            kunde.leggTilOrdre(ordre1,ordre2,ordre3);
+
+            kunde.printOrdre();
+
+            Console.ReadKey();
+
+
 
         }
     }
