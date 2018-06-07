@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Finally.Mennesker;
 
-namespace Finally.Basics
+namespace Finally.OnlineShop
 {
     class Kunde : Person
     {

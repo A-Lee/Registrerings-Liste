@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Finally.Basics
+namespace Finally.OnlineShop
 {
     public enum KundeType
     {
