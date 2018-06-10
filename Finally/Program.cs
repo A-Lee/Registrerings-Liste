@@ -8,7 +8,7 @@ namespace Finally
 {
     class Program
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
             //Test av personliste
             PersonListe personListe = new PersonListe();

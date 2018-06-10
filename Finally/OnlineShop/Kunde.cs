@@ -65,7 +65,7 @@ namespace Finally.OnlineShop
                 ordreListe.AddRange(ordre);
             }
         }
-        public void printOrdre()
+        public string printOrdre()
         {
             double sum = 0;
             string ordre = "";
@@ -75,7 +75,7 @@ namespace Finally.OnlineShop
                 ordre += $"Artikkelnavn: {ordreListe[i].getBeskrivelse()} \tPris: {ordreListe[i].getSumForEn()}\tAntall: {ordreListe[i].getAntall()} \n";
             }
             ordre += $"\nTotal sum for ordre: {sum}";
-            Console.WriteLine(ordre);
+            return ordre;
             
         }
 
